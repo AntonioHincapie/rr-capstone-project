@@ -5,13 +5,14 @@ import { FetchCryptos } from '../../Redux/GetCurrencyReducer';
 
 const Crypto = (props) => {
   const {
-    id, img, name,
+    id, img, name, rank
   } = props;
 
   return (
     <li>
       <NavLink to={`/${id}`}>
         <div>
+          <p>{rank}</p>
           <img src={img} alt={name} />
           <h4>{name}</h4>
         </div>
@@ -38,6 +39,7 @@ export default function HomePage() {
               id={crypto.id}
               name={crypto.name}
               img={crypto.img}
+              rank={crypto.rank}
             />
           ))
         }
@@ -50,4 +52,5 @@ Crypto.propTypes = {
   id: PropTypes.string.isRequired,
   img: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
+  rank: PropTypes.string.isRequired,
 };

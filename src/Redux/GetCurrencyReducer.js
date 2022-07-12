@@ -28,7 +28,7 @@ export const FetchCryptos = () => (dispatch) => {
     .then((result) => {
       result.data.forEach((element) => {
         List.push({
-          img: `/imgs/${element.symbol}.png`,
+          img: `/imgs/color/${element.symbol.toLowerCase()}.png`,
           id: element.id,
           rank: element.rank,
           name: element.name,
