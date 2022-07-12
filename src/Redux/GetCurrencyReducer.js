@@ -8,7 +8,7 @@ const CrytoReducer = (state = [], action) => {
     default:
       return state;
   }
-}
+};
 
 const GetCrypto = (cryptos) => ({
   type: GETCURRENCY,
@@ -36,7 +36,6 @@ export const FetchCryptos = () => (dispatch) => {
       });
       dispatch(GetCrypto(List));
     });
-  console.log(List);
 };
 
 export default CrytoReducer;

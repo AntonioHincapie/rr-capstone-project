@@ -1,6 +1,7 @@
-import { useDispatch, useSelector } from "react-redux";
-import { NavLink } from "react-router-dom";
-import { FetchCryptos } from "../../Redux/GetCurrencyReducer";
+import { useDispatch, useSelector } from 'react-redux';
+import { NavLink } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import { FetchCryptos } from '../../Redux/GetCurrencyReducer';
 
 const Crypto = (props) => {
   const {
@@ -11,12 +12,12 @@ const Crypto = (props) => {
     <li>
       <NavLink to={`/${id}`}>
         <div>
-          <img src={img} alt={`${name} image`} />
+          <img src={img} alt={name} />
           <h4>{name}</h4>
         </div>
       </NavLink>
     </li>
-  )
+  );
 };
 
 export default function HomePage() {
@@ -42,5 +43,11 @@ export default function HomePage() {
         }
       </ul>
     </div>
-  )
+  );
+};
+
+Crypto.propTypes = {
+  id: PropTypes.string.isRequired,
+  img: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
 };
