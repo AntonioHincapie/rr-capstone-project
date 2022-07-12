@@ -4,7 +4,7 @@ import Details from './Components/Details/Details';
 import Header from './Components/Header/Header';
 import HomePage from './Components/HomePage/HomePage';
 
-function App() {
+export default function App() {
   return (
     <div>
       <Header />
@@ -15,5 +15,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
