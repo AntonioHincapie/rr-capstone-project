@@ -44,7 +44,7 @@ export default function HomePage() {
       </ul>
     </div>
   );
-};
+}
 
 Crypto.propTypes = {
   id: PropTypes.string.isRequired,
