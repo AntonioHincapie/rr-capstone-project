@@ -52,5 +52,5 @@ Crypto.propTypes = {
   id: PropTypes.string.isRequired,
   img: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  rank: PropTypes.string.isRequired,
+  rank: PropTypes.number.isRequired,
 };
