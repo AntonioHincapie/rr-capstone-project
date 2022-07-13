@@ -37,6 +37,9 @@
   border: solid 2px var(--gray);
   border-radius: 3px;
   padding: 1rem;
+  background-color: var(--pink);
+  height: 7rem;
+  text-align: center;
 }
 
 .cryptoList img {
