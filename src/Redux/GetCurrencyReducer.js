@@ -28,10 +28,14 @@ export const FetchCryptos = () => (dispatch) => {
     .then((result) => {
       result.data.forEach((element) => {
         List.push({
-          img: `/imgs/${element.symbol}.png`,
+          img: `/imgs/color/${element.symbol.toLowerCase()}.png`,
           id: element.id,
-          rank: element.rank,
+          rank: Number(element.rank),
+          symbol: element.symbol,
           name: element.name,
+          volumen: Number(element.volumeUsd24Hr),
+          price: Number(element.priceUsd),
+          change: Number(element.changePercent24Hr),
         });
       });
       dispatch(GetCrypto(List));
