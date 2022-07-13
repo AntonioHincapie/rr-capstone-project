@@ -17,7 +17,9 @@ const Crypto = (props) => {
           <img src={img} alt={name} />
           <h4>
             #
-            {rank} {name}
+            {rank}
+            -
+            {name}
           </h4>
         </div>
       </NavLink>
