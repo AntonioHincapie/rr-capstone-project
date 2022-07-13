@@ -1,4 +1,21 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('http://fonts.cdnfonts.com/css/gill-sans');
+
+* {
   margin: 0;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --gill: 'Gill Sans', sans-serif;
+  --lato: 'Lato', sans-serif;
+  --pink: #ed4d8a;
+  --pink-odd: #db3675;
+  --white: #eaeaea;
+  --gray: #7c7c7c;
+}
+
+body {
+  background-color: var(--pink-odd);
 }

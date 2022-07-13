@@ -14,9 +14,8 @@ const Crypto = (props) => {
     <li>
       <NavLink to={`/${id}`}>
         <div className="cryptoList">
-          <p>{rank}</p>
           <img src={img} alt={name} />
-          <h4>{name}</h4>
+          <h4>#{rank} {name}</h4>
         </div>
       </NavLink>
     </li>
@@ -60,19 +59,21 @@ export default function HomePage() {
 
   return (
     <div className="container">
-      <select name="filter" id="filter" onInput={(e) => filterHandler(e)}>
-        <option defaultValue="All">All</option>
-        <option value="10">1 to 10</option>
-        <option value="20">11 to 20</option>
-        <option value="30">21 to 30</option>
-        <option value="40">31 to 40</option>
-        <option value="50">41 to 50</option>
-        <option value="60">51 to 60</option>
-        <option value="70">61 to 70</option>
-        <option value="80">71 to 80</option>
-        <option value="90">81 to 90</option>
-        <option value="100">91 to 100</option>
-      </select>
+      <div className="selector">
+        <select name="filter" id="filter" onInput={(e) => filterHandler(e)}>
+          <option defaultValue="All">All</option>
+          <option value="10">1 to 10</option>
+          <option value="20">11 to 20</option>
+          <option value="30">21 to 30</option>
+          <option value="40">31 to 40</option>
+          <option value="50">41 to 50</option>
+          <option value="60">51 to 60</option>
+          <option value="70">61 to 70</option>
+          <option value="80">71 to 80</option>
+          <option value="90">81 to 90</option>
+          <option value="100">91 to 100</option>
+        </select>
+      </div>
       <ul className="cryptos">
         {filterCrypto.length > 0
         && filterCrypto.map((crypto) => (
