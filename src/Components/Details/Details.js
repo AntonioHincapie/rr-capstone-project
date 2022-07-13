@@ -29,16 +29,16 @@ export default function Details() {
             {Crypto.symbol}
           </h4>
           <p className="volumen">
-            Quantity of trading volume repr0esented in USD over the last 24 hours:
-            ${Crypto.volumen.toFixed(2)}
+            Quantity of trading volume repr0esented in USD over the last 24 hours: $
+            {Crypto.volumen.toFixed(2)}
           </p>
           <p className="price">
-            Volume-Weighted price based on real-time market data, translated to USD:
-            ${Crypto.price.toFixed(2)}
+            Volume-Weighted price based on real-time market data, translated to USD: $
+            {Crypto.price.toFixed(2)}
           </p>
           <p className="change">
-            The direction and value change in the last 24 hours:
-            ${Crypto.change.toFixed(2)}
+            The direction and value change in the last 24 hours: $
+            {Crypto.change.toFixed(2)}
           </p>
         </div>
       </div>

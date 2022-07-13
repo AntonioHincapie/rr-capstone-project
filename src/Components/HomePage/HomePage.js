@@ -91,15 +91,14 @@ export default function HomePage() {
         ))}
         {filterCrypto.length === 0
         && cryptos.map((crypto) => (
-            <Crypto
-              key={crypto.id}
-              id={crypto.id}
-              name={crypto.name}
-              img={crypto.img}
-              rank={crypto.rank}
-            />
-          ))
-        }
+          <Crypto
+            key={crypto.id}
+            id={crypto.id}
+            name={crypto.name}
+            img={crypto.img}
+            rank={crypto.rank}
+          />
+        ))}
       </ul>
     </div>
   );
