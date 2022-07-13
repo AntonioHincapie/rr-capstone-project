@@ -39,7 +39,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## Video Demo
 
-[Link]()
+[Demo](https://www.loom.com/share/106147e75ae148d898aacd03a021ea78)
 
 ## Authors
 
