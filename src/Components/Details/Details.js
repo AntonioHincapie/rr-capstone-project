@@ -1,5 +1,6 @@
 import { NavLink, useParams } from 'react-router-dom';
 import { useSelector } from 'react-redux';
+import './Details.css';
 
 export default function Details() {
   const { id } = useParams();

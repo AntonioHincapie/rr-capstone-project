@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { FetchCryptos } from '../../Redux/GetCurrencyReducer';
 import { useState } from 'react';
+import './HomePage.css';
 
 const Crypto = (props) => {
   const {
@@ -12,7 +13,7 @@ const Crypto = (props) => {
   return (
     <li>
       <NavLink to={`/${id}`}>
-        <div>
+        <div className="cryptoList">
           <p>{rank}</p>
           <img src={img} alt={name} />
           <h4>{name}</h4>
