@@ -9,7 +9,7 @@
 }
 
 #filter {
-  padding: 0px 4px;
+  padding: 0 4px;
   height: 2rem;
   width: 7rem;
   background-color: var(--pink);

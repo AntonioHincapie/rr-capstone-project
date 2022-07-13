@@ -2,6 +2,11 @@
   background-color: var(--pink);
 }
 
+.containerCrypto img {
+  height: 4rem;
+  width: 4rem;
+}
+
 .containerDetails a img {
   width: 2rem;
   height: 2rem;
@@ -15,11 +20,6 @@
   gap: 1rem;
   color: var(--white);
   padding: 1rem 2rem;
-}
-
-.containerCrypto img {
-  height: 4rem;
-  width: 4rem;
 }
 
 .containerCrypto h3 {
@@ -40,7 +40,4 @@
   text-align: center;
   padding: 0.5rem 1rem;
   background-color: var(--pink-odd);
-}
-
-.volumen {
 }

@@ -1,13 +1,13 @@
 import { useDispatch, useSelector } from 'react-redux';
+import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { FetchCryptos } from '../../Redux/GetCurrencyReducer';
-import { useState } from 'react';
 import './HomePage.css';
 
 const Crypto = (props) => {
   const {
-    id, img, name, rank
+    id, img, name, rank,
   } = props;
 
   return (
@@ -15,7 +15,11 @@ const Crypto = (props) => {
       <NavLink to={`/${id}`}>
         <div className="cryptoList">
           <img src={img} alt={name} />
-          <h4>#{rank} {name}</h4>
+          <h4>
+            #
+            {rank}
+            {name}
+          </h4>
         </div>
       </NavLink>
     </li>
@@ -35,23 +39,23 @@ export default function HomePage() {
     if (e.target.value === '10') {
       setFilter(cryptos.filter((cryp) => cryp.rank <= 10));
     } else if (e.target.value === '20') {
-      setFilter(cryptos.filter((cryp) => cryp.rank <= 20 && cryp.rank >=11));
+      setFilter(cryptos.filter((cryp) => cryp.rank <= 20 && cryp.rank >= 11));
     } else if (e.target.value === '30') {
-      setFilter(cryptos.filter((cryp) => cryp.rank <= 30 && cryp.rank >=21));
+      setFilter(cryptos.filter((cryp) => cryp.rank <= 30 && cryp.rank >= 21));
     } else if (e.target.value === '40') {
-      setFilter(cryptos.filter((cryp) => cryp.rank <= 40 && cryp.rank >=31));
+      setFilter(cryptos.filter((cryp) => cryp.rank <= 40 && cryp.rank >= 31));
     } else if (e.target.value === '50') {
-      setFilter(cryptos.filter((cryp) => cryp.rank <= 50 && cryp.rank >=41));
+      setFilter(cryptos.filter((cryp) => cryp.rank <= 50 && cryp.rank >= 41));
     } else if (e.target.value === '60') {
-      setFilter(cryptos.filter((cryp) => cryp.rank <= 60 && cryp.rank >=51));
+      setFilter(cryptos.filter((cryp) => cryp.rank <= 60 && cryp.rank >= 51));
     } else if (e.target.value === '70') {
-      setFilter(cryptos.filter((cryp) => cryp.rank <= 70 && cryp.rank >=61));
+      setFilter(cryptos.filter((cryp) => cryp.rank <= 70 && cryp.rank >= 61));
     } else if (e.target.value === '80') {
-      setFilter(cryptos.filter((cryp) => cryp.rank <= 80 && cryp.rank >=71));
+      setFilter(cryptos.filter((cryp) => cryp.rank <= 80 && cryp.rank >= 71));
     } else if (e.target.value === '90') {
-      setFilter(cryptos.filter((cryp) => cryp.rank <= 90 && cryp.rank >=81));
+      setFilter(cryptos.filter((cryp) => cryp.rank <= 90 && cryp.rank >= 81));
     } else if (e.target.value === '100') {
-      setFilter(cryptos.filter((cryp) => cryp.rank <= 100 && cryp.rank >=91));
+      setFilter(cryptos.filter((cryp) => cryp.rank <= 100 && cryp.rank >= 91));
     } else {
       setFilter(cryptos);
     }
