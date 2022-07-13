@@ -1,3 +1,46 @@
-button {
-  background-color: aqua;
+.containerDetails {
+  background-color: var(--pink);
+}
+
+.containerDetails a img {
+  width: 2rem;
+  height: 2rem;
+  margin-left: 2rem;
+}
+
+.containerCrypto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  color: var(--white);
+  padding: 1rem 2rem;
+}
+
+.containerCrypto img {
+  height: 4rem;
+  width: 4rem;
+}
+
+.containerCrypto h3 {
+  font-family: var(-gill);
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.containerCrypto h4 {
+  font-family: var(--lato);
+  font-weight: bolder;
+  font-size: 1.1rem;
+}
+
+.containerCrypto p {
+  font-family: var(--lato);
+  font-weight: 600;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  background-color: var(--pink-odd);
+}
+
+.volumen {
 }
