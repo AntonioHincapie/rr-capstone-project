@@ -1,3 +1,27 @@
+.Header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--pink);
+  color: var(--white);
+}
+
+.Header h3 {
+  font-family: var(--lato);
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+
+.Header p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--gill);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
 .Header p img {
   height: 25px;
   width: auto;
