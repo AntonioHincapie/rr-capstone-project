@@ -1,0 +1,52 @@
+.container {
+  padding: 1rem;
+}
+
+.selector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#filter {
+  padding: 0 4px;
+  height: 2rem;
+  width: 7rem;
+  background-color: var(--pink);
+  color: var(--white);
+  border-radius: 15px;
+  border: solid 2px var(--gray);
+}
+
+.cryptos {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  margin: 1rem 0;
+}
+
+.cryptos li a {
+  text-decoration: none;
+}
+
+.cryptoList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  border: solid 2px var(--gray);
+  border-radius: 3px;
+  padding: 1rem;
+}
+
+.cryptoList img {
+  height: 32px;
+  width: 32px;
+}
+
+.cryptoList h4 {
+  font-family: var(--gill);
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--white);
+}
