@@ -63,6 +63,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
+- Original design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio).
 - Microverse curriculum.
 - My code partners.
 - My code reviewers.

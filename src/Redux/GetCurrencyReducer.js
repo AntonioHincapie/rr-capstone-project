@@ -4,7 +4,7 @@ const GETCURRENCY = 'rr-capstone-project/GETCURRENCY';
 const CrytoReducer = (state = [], action) => {
   switch (action.type) {
     case GETCURRENCY:
-      return [...action.cryptos];
+      return [...action.payload];
     default:
       return state;
   }
@@ -12,7 +12,7 @@ const CrytoReducer = (state = [], action) => {
 
 const GetCrypto = (cryptos) => ({
   type: GETCURRENCY,
-  cryptos,
+  payload: cryptos,
 });
 
 export const FetchCryptos = () => (dispatch) => {
