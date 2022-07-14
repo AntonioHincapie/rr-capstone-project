@@ -13,7 +13,7 @@ describe('Components Test', () => {
         <MemoryRouter>
           <Header />
         </MemoryRouter>
-      </Provider>
+      </Provider>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -25,7 +25,7 @@ describe('Components Test', () => {
         <MemoryRouter>
           <HomePage />
         </MemoryRouter>
-      </Provider>
+      </Provider>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();

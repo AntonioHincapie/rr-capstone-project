@@ -9,7 +9,7 @@ describe('Fetch CryptoCurrency', () => {
     const GETCURRENCY = 'rr-capstone-project/GETCURRENCY';
     const reducer = CrytoReducer([], {
       type: GETCURRENCY,
-      payload :[
+      payload: [
         {
           change: 2.016432888978943,
           id: 'bitcoin',
